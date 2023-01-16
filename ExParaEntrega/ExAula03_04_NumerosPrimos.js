@@ -1,27 +1,34 @@
-// console.log(numPrimo(30))
-// function numPrimo (entrada) {
-//     for (let i = 2; i <= entrada; i++) {
-        
-//         if (entrada % i == 0 )  {     
-//             return false 
+
+// let entradaNumPrimo = 50
+// function numPrimo(num) {
+//     for (var div = 2; div < num; div++) 
+//         if (num % div == 0){
+//             return false;
 //         }
-//     } 
+        
+//             return true;
+        
 // }
+// for (var i = 2; i < entradaNumPrimo; i++) 
+//     if (numPrimo(i)) 
+//         console.log(i);
 
-// for (let i = 2; i < entrada; index++) {
-    
-// }
-let entradaNumPrimo = 50
+// OUTRO MODO DE FAZER
+console.log(mostraPrimos(25))
 
-function numPrimo(num) {
-    for (var div = 2; div < num; div++) 
-        if (num % div == 0){
+function mostraPrimos (limite) {
+    for(let numero = 2; numero <= limite; numero++) {
+        if (verificaPrimo(numero)) {
+            console.log(numero);
+        }
+    }
+}
+
+function verificaPrimo (numero) {
+    for (let fator = 2; fator < numero; fator++) {
+        if (numero % fator === 0) {
             return false;
         }
-        
-            return true;
-        
+    }
+        return true;
 }
-for (var i = 2; i < entradaNumPrimo; i++) 
-    if (numPrimo(i)) 
-        console.log(i);

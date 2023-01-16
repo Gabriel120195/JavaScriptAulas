@@ -1,23 +1,23 @@
-// Ex 1)
-//let x = 10;
-//let y = (x > 5) && (x < 15);
+//Ex 1)
+let a = 10;
+let b = (a > 5) && (a < 15);
 
-//console.log(y)
+console.log(b)
 
-// Ex 2)
-//let x = 5;
-//x += 3;
+//Ex 2)
+let c = 5;
+c += 3;
 
-//console.log(x);
+console.log(c);
 
-// Ex 3)
-//let x = 10;
-//let y = x++;
+//Ex 3)
+let d = 10;
+let e = d++;
 
-//console.log(y);
+console.log(d);
 
-// Ex 4)
-//let x = 1;
-//let y = x !== 2;
+//Ex 4)
+let f = 1;
+let g = f !== 2;
 
-//console.log(y)
+console.log(g)

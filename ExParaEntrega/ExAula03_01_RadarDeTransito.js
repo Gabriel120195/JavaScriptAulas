@@ -1,15 +1,15 @@
 // 01 - Radar
-let velocidadeDoVeiculo = 100
-let vMaxDaVia = 80
+// let velocidadeDoVeiculo = 100
+// let vMaxDaVia = 80
 
-console.log(radar(velocidadeDoVeiculo, vMaxDaVia))
+console.log(radar(80, 100));
 
 function radar(velocidadeDoVeiculo, vMaxDaVia) {
 
     if (velocidadeDoVeiculo > vMaxDaVia) {
-        console.log("Multado!")
+        console.log("Multado!");
     }
     else{
-        console.log("Velocidade Permitida")
+        console.log("Velocidade Permitida");
     }
 }
