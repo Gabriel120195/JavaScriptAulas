@@ -1,0 +1,58 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 940px;
+    margin-left:auto;
+    margin-right: auto;
+    text-decoration: none
+}
+
+.titulo {
+    background-color: #E1EDF2;
+    color: #3D3D3D;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none
+}
+
+h2 {
+    border-color: black;
+    border-bottom-style: solid;
+    text-decoration: none
+}
+
+a {
+    text-decoration: none;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    text-align: center;
+    background-color: whitesmoke;
+    color: lightgrey;
+    padding: 15px;
+    margin: 30px;
+
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+.imagem-topo {
+    width: 550px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.imagens-corpo {
+    width: 275px;
+    float: right;
+}
+
+p {
+    text-align: justify;
+}

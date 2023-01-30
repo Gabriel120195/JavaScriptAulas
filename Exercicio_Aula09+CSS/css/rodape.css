@@ -1,0 +1,12 @@
+.rodape {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 50px;
+}
+
+.rodape-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #e1e8f2;
+}
