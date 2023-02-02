@@ -74,23 +74,35 @@
     <button>Enviar</button>
 </form>
 <script>
-    const formulario = document.querySelector("form");
-
-    formulario.addEventListener("submit", function() {
+    const formulario = document.querySelector('form');
+    const divMsg = document.createElement('div');
+    divMsg.classList.add('msg', 'msg-sucesso');
+    
+    formulario.addEventListener('submit',function(){
         event.preventDefault();
-
-        const camposObrigatorios = formulario.querySelectorAll("obrigatorio");
+        const camposObrigatorios = formulario.querySelectorAll('.obrigatorio');
         const mensagemErro = [];
-
-        for (const campo of camposObrigatorios) {
-            if (campo.value === " ") {
-                campo.classList.add("destacar");
+        for (let campo of camposObrigatorios){
+            if (campo.value === ''){
+                campo.classList.add('destacar');
+                mensagemErro.push(campo.dataset.mensagem);
             }
-            else{
-                campo.classList.remove("destacar");
+            else {
+                campo.classList.remove('destacar');
             }
         }
+        if (mensagemErro.length>0) {
+            divMsg.innerHTML = `
+            <strong>Atenção!</strong><br>
+            ${mensagemErro.join('<br>')}           
+            `;
+
+            divMsg.classList.replace('msg-sucesso', 'msg-erro');
+        }
+        else {
+            divMsg.textContent = 'Cadastro realizado com sucesso!'
+            divMsg.classList.replace('msg-erro', 'msg-sucesso');
+        }
+        formulario.prepend(divMsg);
     });
-
-
 </script>
