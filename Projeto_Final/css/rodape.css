@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     padding-left: 55px;
     padding-right: 75px;
-
 }
 
 .rodape-titulo {
@@ -15,7 +14,6 @@
 .rodape-redes {
     display: flex;
     justify-content: space-between;
-    
 }
 .rodape-redes-a {
     flex-wrap: wrap;
@@ -24,8 +22,6 @@
 .rodape-redes-itens-a {
     width: 50px;
     height: 50px;
-    
-
 }
 
 .rodape-redes-itens-b {
