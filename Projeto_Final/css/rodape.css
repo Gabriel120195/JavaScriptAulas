@@ -1,0 +1,42 @@
+.rodape {
+    display: block;
+    background-color: blue;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 55px;
+    padding-right: 75px;
+
+}
+
+.rodape-titulo {
+    line-height: 40px;
+}
+.rodape-redes {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rodape-redes-a {
+    flex-wrap: wrap;
+}
+
+.rodape-redes-itens-a {
+    width: 50px;
+    height: 50px;
+    
+
+}
+
+.rodape-redes-itens-b {
+    width: 50px;
+    height: 50px;
+}
+
+.item1, .item2, .item3, .item4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+    gap: 10%;
+}
+

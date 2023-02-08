@@ -1,0 +1,131 @@
+.corpo_principal {
+    background-color:paleturquoise;
+    padding-left: 55px;
+    padding-right: 55px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+
+}
+
+.h2ComBorda {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    border-width: 5px;
+    border-top-style: solid;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.corpo_principal-bloco1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.corpo_principal-bloco-1-titulo{
+    display: block;
+}
+
+.corpo_principal-bloco1-imagem {
+    margin-top: 25px;
+}
+
+.corpo_principal-imagem-item {
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+}
+
+.corpo_principal-bloco2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4%;
+}
+
+.corpo_principal-bloco2-sobre {
+    text-align: justify;
+
+}
+
+.corpo_principal-bloco2-botao {
+    background-color: red;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.bloco3 {
+    text-align: center;
+    display: flex;
+    gap: 15%;
+    flex-wrap: wrap;
+}
+
+.bloco3-titulos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53%;
+    margin-top: 50px;
+}
+
+.corpo_principal-lista1-qualidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        " destaque . ."
+        " destaque . .";
+    gap: 20px;
+    padding: 1em;
+}
+
+.lista1-qualidades-destaque {
+    grid-area: destaque;
+    height: 261px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 200px;
+}
+
+.lista1-qualidades {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 120px;
+}
+
+.corpo_principal-lista2-habilidades {
+    line-height: 60px;
+}
+
+.corpo_principal-bloco4 {
+    display: flex;
+    gap: 25%;
+}
+
+.corpo_principal-bloco4-experiencia-1 {
+    margin-bottom: 25px;
+}
+
+.corpo_principal-bloco4-experiencia-2 {
+
+}

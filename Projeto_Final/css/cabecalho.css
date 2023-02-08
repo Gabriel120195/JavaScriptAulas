@@ -1,0 +1,67 @@
+.cabecalho {
+    background-color: aqua;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cabecalho-logo {
+    padding: 5px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    
+
+}
+
+.cabecalho-logo-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+.cabecalho-dados {
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
+    margin-right: 10%;
+}
+
+
+.cabecalho-dados-nome {
+    color: black;
+    font-size: 30px;
+}
+
+.cabecalho-dados-email {
+    font-size: 20px;
+}
+
+.cabecalho-dados-telefone {
+    font-size: 20px;
+}
+.cabecalho-redes{
+    display: flex;
+    gap: 70%;
+    margin-right: 20%;
+}
+.cabecalho-redes-itens { 
+    
+    width: 90px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.cabecalho-modoNoturno {
+    text-align: center;
+    margin-right: 25px;
+    margin-top: 50px;
+
+}
+
+.cabecalho-modoNoturno-logo {
+    width: 30px;
+    height: 30px;
+}
