@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .cabecalho-logo {
@@ -31,7 +30,7 @@
 
 
 .cabecalho-dados-nome {
-    color: black;
+    
     font-size: 30px;
 }
 

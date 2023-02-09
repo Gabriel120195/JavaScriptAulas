@@ -6,6 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
 h1 {
     font-size: 50px;
 }
@@ -61,14 +62,18 @@ h3 {
 
 .corpo_principal-bloco2-sobre {
     text-align: justify;
+    font-size: 20px;
 
 }
 
 .corpo_principal-bloco2-botao {
-    background-color: red;
+    background-color: black;
+    color: blueviolet;
+    border: 2px solid blueviolet;
     line-height: 40px;
     text-transform: uppercase;
     border-radius: 50px;
+    padding: 1em 2em;
 }
 
 .bloco3 {
@@ -94,27 +99,44 @@ h3 {
         " destaque . .";
     gap: 20px;
     padding: 1em;
+    justify-content: center;
 }
 
 .lista1-qualidades-destaque {
     grid-area: destaque;
-    height: 261px;
-    border: 1px solid black;
+    height: 262px;
     border-radius: 8px;
-    background-color: aliceblue;
     width: 200px;
+    border: 2px solid blueviolet;
+    background-color: black;
+    color: white;
 }
 
 .lista1-qualidades {
-    border: 1px solid black;
+    border: 2px solid blueviolet;
     border-radius: 8px;
-    background-color: aliceblue;
+    color: white;
+    background-color: black;
     width: 200px;
     height: 120px;
+}
+.destaque {
+    padding-top: 55%;
+    line-height: 40px;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.itemLista {
+    padding-top: 20%;
+    line-height: 40px;
+    font-size: 25px;
+    color: blueviolet;
 }
 
 .corpo_principal-lista2-habilidades {
     line-height: 60px;
+    font-size: 25px;
 }
 
 .corpo_principal-bloco4 {
@@ -126,6 +148,11 @@ h3 {
     margin-bottom: 25px;
 }
 
-.corpo_principal-bloco4-experiencia-2 {
+.habilidades01 {
+    padding-top: 20px;
+}
 
+.habilidades01-lista {
+    line-height: 40px;
+    text-align: center;
 }

@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="stylesheet" href="./css/corpo_pagina.css">
+    <link rel="stylesheet" href="./css/modoEscuro.css">
 </head>
 <body>
-<header class="cabecalho">
+<header>
+    <div class="cabecalho">
     <div class="cabecalho-logo">
     <img src="./img/logo.jpg" alt="logo" class="cabecalho-logo-item">
     </div>
@@ -32,12 +34,14 @@
     </div>
     </div>
 
-
+    <div class="clique">
     <figure class="cabecalho-modoNoturno">
-    <img src="./img/dark-mode-icon.png" alt="logo" class="cabecalho-modoNoturno-logo">
+    <img src="./img/dark-mode-icon.png" id="botao" alt="logo" class="cabecalho-modoNoturno-logo">
     <figcaption>Modo Notuno</figcaption>
     </figure>
 
+    </div>
+    </div>
 </header>
 
 <main class="corpo_principal">
@@ -77,14 +81,25 @@
     </div>
     </div>
 
-    <section class="bloco3">
+    <section>
+    <div class="bloco3">
     <ul class="corpo_principal-lista1-qualidades">
-        <li class="lista1-qualidades-destaque">qualidade destaque</li>
-        <li class="lista1-qualidades">qualidade 1</li>
-        <li class="lista1-qualidades">qualidade 2</li>
-        <li class="lista1-qualidades">qualidade 3</li>
-        <li class="lista1-qualidades">qualidade 4</li>
+        <li class="lista1-qualidades-destaque">
+        <p class="destaque">destaque</p></li>
+        
+        <li class="lista1-qualidades">
+        <p class="itemLista">destaque</p></li>
+        
+        <li class="lista1-qualidades">
+        <p class="itemLista">destaque</p></li>
+        
+        <li class="lista1-qualidades">
+        <p class="itemLista">destaque</p></li>
+        
+        <li class="lista1-qualidades">
+        <p class="itemLista">destaque</p></li>
     </ul>
+
     
     <div class="corpo_principal-lista2">
     <ul class="corpo_principal-lista2-habilidades">
@@ -95,6 +110,7 @@
         <li>habilidade 5</li>
     </ul>
     </div>
+    </div>
     </section>
 
     <h2>Experiencias</h2>
@@ -104,29 +120,35 @@
     <h3>Empresa SA</h3>
     <P>Cargo</P>
 
+    <div class="habilidades01">
     <p>Sport Club Corinthians Paulista é um clube poliesportivo brasileiro da cidade de São Paulo,</p>
     <p>capital do estado de São Paulo. Foi fundado como uma equipe de futebol no dia 1 de setembro de 1910</p> 
     <p>por um grupo de operários do bairro Bom Retiro</p>
-
-    <ul>
+    
+    <div class="habilidades01">
+    <ul class="habilidades01-lista">
         <li>habilidade 1</li>
         <li>habilidade 2</li>
         <li>habilidade 3</li>
         <li>habilidade 4</li>
         <li>habilidade 5</li>
-    </ul> 
+    </ul>
+    </div> 
+    </div>
     </div>
 
     <div class="corpo_principal-bloco4-experiencia-2">
     <p>2001 - 2011</p>
     <h3>Empresa SA</h3>
     <P>Cargo</P>
-
+    
+    <div class="habilidades01">
     <p>Sport Club Corinthians Paulista é um clube poliesportivo brasileiro da cidade de São Paulo,</p>
     <p>capital do estado de São Paulo. Foi fundado como uma equipe de futebol no dia 1 de setembro de 1910</p> 
     <p>por um grupo de operários do bairro Bom Retiro</p>
 
-    <ul>
+    <div class="habilidades01">
+    <ul class="habilidades01-lista">
         <li>habilidade 1</li>
         <li>habilidade 2</li>
         <li>habilidade 3</li>
@@ -135,9 +157,13 @@
     </ul>
     </div>
     </div>
+    </div>
+    </div>
 </main>
 
-<footer class="rodape">
+<footer>
+
+   <div class="rodape">
     <div class="rodape-titulo">
     <h3>Saiba Mais</h3>
     </div>
@@ -178,6 +204,29 @@
         </div>
     </div>
     </div>
+    </div>
 </footer>
+
+<script>
+    const clique = document.querySelector('#botao');
+
+
+    clique.addEventListener("click",function(){
+        let cabecalho = document.querySelector('.cabecalho','.corpo_principal');
+        let corpo = document.querySelector('.corpo_principal');
+        let botao = document.querySelector('.corpo_principal-bloco2-botao');
+        let qualidadesDestaque = document.querySelector('.lista1-qualidades-destaque');
+        let qualidades = document.querySelector('.lista1-qualidades');
+        let rodape = document.querySelector('.rodape');
+        
+        
+        cabecalho.classList.toggle('cabecalho-escuro');
+        corpo.classList.toggle('corpo_principal-escuro');
+        botao.classList.toggle('corpo_principal-bloco2-botao-escuro');
+        rodape.classList.toggle('rodape-escuro');
+        qualidadesDestaque.toggle('lista1-qualidades-destaque-escuro');
+        qualidades.toggle('lista1-qualidades-escuro');    
+    });
+</script>
 </body>
 </html>
