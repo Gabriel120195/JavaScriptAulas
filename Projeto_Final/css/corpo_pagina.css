@@ -1,5 +1,5 @@
 .corpo_principal {
-    background-color:paleturquoise;
+    background-color:#FFFFFF;
     padding-left: 55px;
     padding-right: 55px;
     align-items: center;
@@ -16,6 +16,7 @@ h2 {
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
@@ -26,17 +27,24 @@ h2 {
     margin-top: 25px;
     border-width: 5px;
     border-top-style: solid;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h3 {
     font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .corpo_principal-bloco1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50%;
 }
 
 .corpo_principal-bloco-1-titulo{
@@ -55,6 +63,7 @@ h3 {
 
 .corpo_principal-bloco2 {
     display: flex;
+    justify-content:first baseline;
     justify-content: space-between;
     align-items: center;
     padding-right: 4%;
@@ -79,14 +88,14 @@ h3 {
 .bloco3 {
     text-align: center;
     display: flex;
-    gap: 15%;
+    gap: 10%;
     flex-wrap: wrap;
 }
 
 .bloco3-titulos{
     display: flex;
     flex-wrap: wrap;
-    gap: 53%;
+    gap: 50%;
     margin-top: 50px;
 }
 
@@ -128,7 +137,7 @@ h3 {
 }
 
 .itemLista {
-    padding-top: 20%;
+    padding-top: 9%;
     line-height: 40px;
     font-size: 25px;
     color: blueviolet;
@@ -141,18 +150,19 @@ h3 {
 
 .corpo_principal-bloco4 {
     display: flex;
-    gap: 25%;
+    justify-content: space-between;
+    padding-right:  55px;
 }
 
-.corpo_principal-bloco4-experiencia-1 {
+.corpo_principal-bloco4-endereco-1 {
     margin-bottom: 25px;
 }
 
-.habilidades01 {
+.enderecos01 {
     padding-top: 20px;
 }
 
-.habilidades01-lista {
+.endereco01-lista {
     line-height: 40px;
     text-align: center;
 }
