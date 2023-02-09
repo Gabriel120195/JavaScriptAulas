@@ -22,6 +22,7 @@
 .rodape-redes-itens-a {
     width: 50px;
     height: 50px;
+    font-size: 25px;
 }
 
 .rodape-redes-itens-b {
@@ -34,5 +35,6 @@
     align-items: center;
     margin-bottom: 10%;
     gap: 10%;
+    font-size: 25px;
 }
 
